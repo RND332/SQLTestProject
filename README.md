@@ -33,5 +33,6 @@ Request to the intermediate table, with the condition of displaying the product 
 select DBForTesting.dbo.Product.Name, DBForTesting.dbo.Category.Name from DBForTesting.dbo.Product_Category
 full join DBForTesting.dbo.Product on Product_Category.product_id = DBForTesting.dbo.Product.ProductID
 full join DBForTesting.dbo.Category on Product_Category.category_id = DBForTesting.dbo.Category.CategoryID
+order by DBForTesting.dbo.Product.Name DESC 
 --where DBForTesting.dbo.Product.ProductID = 4
 ```
